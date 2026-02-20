@@ -52,8 +52,7 @@ async function getNumbers() {
 
     requestAnimationFrame(drawFrame)
 }
-getNumbers();
-
+setInterval(()=>{getNumbers();}, 180000);
 
 
 
