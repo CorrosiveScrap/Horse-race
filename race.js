@@ -5,16 +5,8 @@ let chartWidth;
 let lineJump;
 let currentAmount;
 function checkDimentions() {
-    const img = document.getElementById('topImage');
-    if (!img) return;
 
-    const renderedHeight = img.getBoundingClientReact().height;
-    const reservedFraction = 0.22;
-    const reservedHeight = renderedHeight * reservedFraction;
-
-    c.style.top = reservedHeight + "px";
-
-    c.height = window.innerHeight - reservedHeight;
+    c.height = window.innerHeight;
     c.width = window.innerWidth;
 
     chartWidth = c.width - c.width / 4;
