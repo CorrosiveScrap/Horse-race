@@ -9,7 +9,7 @@ function checkDimentions() {
     if (!img) return;
 
 
-    const reservedFraction = 0.78;
+    const reservedFraction = 0.22;
     const reservedHeight = img.naturalHeight * reservedFraction;
 
     c.style.top = reservedHeight + "px";
