@@ -4,12 +4,10 @@ ctx = c.getContext('2d')
 let chartWidth;
 let lineJump;
 let currentAmount;
-window.addEventListener('load', ()=>{
-    checkDimentions();
-}):
 function checkDimentions() {
     const img = document.getElementById('topImage');
     const imageReserve = img.offsetHeight;
+    c.style.top= imageReserve + "px";
     c.height = window.innerHeight - imageReserve;
     c.width = window.innerWidth;
     chartWidth = c.width - c.width / 4;
@@ -20,7 +18,9 @@ function checkDimentions() {
     }, 50)
     
 }
-checkDimentions()
+window.addEventListener('load', ()=>{
+    checkDimentions();
+}):
 
 window.addEventListener('resize', () => {
     checkDimentions()
