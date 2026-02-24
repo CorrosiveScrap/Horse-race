@@ -7,9 +7,13 @@ let currentAmount;
 function checkDimentions() {
     const img = document.getElementById('topImage');
     if (!img) return;
-    const reservedHeight = img.naturalHeight*0.78; 
+
+
+    const reservedFraction = 0.78;
+    const reservedHeight = img.naturalHeight * reservedFraction;
 
     c.style.top = reservedHeight + "px";
+
     c.height = window.innerHeight - reservedHeight;
     c.width = window.innerWidth;
 
@@ -20,6 +24,7 @@ function checkDimentions() {
         currentAmount = 1;
     }, 50);
 }
+
 
 window.addEventListener('load', ()=>{
     checkDimentions();
