@@ -4,20 +4,23 @@ ctx = c.getContext('2d')
 let chartWidth;
 let lineJump;
 let currentAmount;
-const img = document.getElementById('topImage');
 function checkDimentions() {
-    const imageReserve = img.offsetHeight;
-    c.style.top= imageReserve + "px";
-    c.height = window.innerHeight - imageReserve;
+    const img = document.getElementById('topImage');
+    if (!img) return;
+    const reservedHeight = img.naturalHeight*0.75; 
+
+    c.style.top = reservedHeight + "px";
+    c.height = window.innerHeight - reservedHeight;
     c.width = window.innerWidth;
+
     chartWidth = c.width - c.width / 4;
     lineJump = chartWidth / 4;
 
     setTimeout(() => {
-        currentAmount = 1
-    }, 50)
-    
+        currentAmount = 1;
+    }, 50);
 }
+
 window.addEventListener('load', ()=>{
     checkDimentions();
 });
