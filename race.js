@@ -5,7 +5,7 @@ let chartWidth;
 let lineJump;
 let currentAmount;
 function checkDimentions() {
-    const imageReserve = 600;
+    const imageReserve = 300;
     c.height = window.innerHeight - imageReserve;
     c.width = window.innerWidth;
     chartWidth = c.width - c.width / 4;
