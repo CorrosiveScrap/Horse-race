@@ -4,8 +4,8 @@ ctx = c.getContext('2d')
 let chartWidth;
 let lineJump;
 let currentAmount;
+const img = document.getElementById('topImage');
 function checkDimentions() {
-    const img = document.getElementById('topImage');
     const imageReserve = img.offsetHeight;
     c.style.top= imageReserve + "px";
     c.height = window.innerHeight - imageReserve;
