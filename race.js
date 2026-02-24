@@ -7,7 +7,7 @@ let currentAmount;
 function checkDimentions() {
     const img = document.getElementById('topImage');
     if (!img) return;
-    const reservedHeight = img.naturalHeight*0.75; 
+    const reservedHeight = img.naturalHeight*0.78; 
 
     c.style.top = reservedHeight + "px";
     c.height = window.innerHeight - reservedHeight;
