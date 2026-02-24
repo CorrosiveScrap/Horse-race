@@ -8,9 +8,9 @@ function checkDimentions() {
     const img = document.getElementById('topImage');
     if (!img) return;
 
-
+    const renderedHeight = img.getBoundingClientReact().height;
     const reservedFraction = 0.22;
-    const reservedHeight = img.naturalHeight * reservedFraction;
+    const reservedHeight = renderedHeight * reservedFraction;
 
     c.style.top = reservedHeight + "px";
 
