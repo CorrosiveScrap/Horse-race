@@ -192,7 +192,7 @@ function drawFrame(timestamp = 0) {
 
         // Draw the amount label at the bottom of the line
         ctx.fillStyle = 'black';
-        const fontSize = Math.max(12, Math.min(28, c.width * 0.025));  // 2.5vw, min 12px, max 28px
+        const fontSize = Math.max(12, Math.min(20, c.width * 0.025));  // 2.5vw, min 12px, max 28px
         ctx.font = `${fontSize}px Arial`;
         ctx.textBaseline = 'top';             
         const text = `$${amount}`;
@@ -343,4 +343,5 @@ window.addEventListener('resize', () => {
         requestAnimationFrame(drawFrame);
     }, 100);
 });
+
 
