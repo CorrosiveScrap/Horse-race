@@ -242,7 +242,7 @@ function drawFrame(timestamp = 0) {
         ctx.fillStyle = 'black';
         ctx.font = `${c.width / 50}px Arial`;
         ctx.textBaseline = "middle";
-        ctx.fillText(label, 10, position);
+        ctx.fillText(label, 15, position);
 
         // Save bar info for hover detection
         barsInfo.push({
@@ -342,6 +342,7 @@ window.addEventListener('resize', () => {
         requestAnimationFrame(drawFrame);
     }, 100);
 });
+
 
 
 
