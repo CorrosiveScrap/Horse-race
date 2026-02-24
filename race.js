@@ -20,7 +20,7 @@ function checkDimentions() {
 }
 window.addEventListener('load', ()=>{
     checkDimentions();
-}):
+});
 
 window.addEventListener('resize', () => {
     checkDimentions()
